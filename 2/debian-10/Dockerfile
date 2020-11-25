@@ -2,7 +2,7 @@ FROM quay.io/ibmz/debian:buster
 LABEL maintainer "Bitnami <containers@bitnami.com>"
 
 ENV HOME="/" \
-    OS_ARCH="amd64" \
+    OS_ARCH="s390x" \
     OS_FLAVOUR="debian-10" \
     OS_NAME="linux"
 
