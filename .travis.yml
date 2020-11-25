@@ -5,7 +5,7 @@ env:
   global:
 #    - TEST_DIR="$PWD/1.15/alpine3.12/test/"
 #    - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/2/debian/"
+    - BUILD_DIR="$PWD/2/debian-10/"
     - REPO="quay.io/ibmz/openldap"
     - TAG="$REPO:2.56"
 before_script: 
