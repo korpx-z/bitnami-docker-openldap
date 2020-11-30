@@ -12,7 +12,7 @@ RUN install_packages acl ca-certificates curl gzip libc6 libdb5.3 libltdl7 libns
 RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "openldap" "2.4.56-0" --checksum 5e334dff32085dbd4be79fe6cc2ce5e74d29fccbd933b0f2dfa33447e2d19206
 RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "gosu" "1.12.0-2" --checksum 4d858ac600c38af8de454c27b7f65c0074ec3069880cb16d259a6e40a46bbc50
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install slapd && \
+    apt-get install -y slapd && \
     rm -r /var/lib/apt/lists /var/cache/apt/archives
 RUN chmod g+rwX /opt/bitnami
 
